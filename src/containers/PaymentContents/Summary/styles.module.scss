@@ -1,0 +1,66 @@
+@import '@styles/base';
+
+.summary {
+  background-color: $Magnolia;
+  padding: 20px;
+  border-radius: 10px;
+  color: $Marine-blue;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .wrapper__title {
+      font-weight: 700;
+    }
+    .wrapper__desc {
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .link {
+      color: $Cool-gray;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        color: $Light-blue;
+      }
+    }
+  }
+  .addons {
+    border-top: 1px solid gray;
+    .addon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px 0;
+      .addon__title {
+        color: $Cool-gray;
+        font-weight: 500;
+      }
+      .addon__price {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.durationYear {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: $Cool-gray;
+  font-weight: 500;
+  .price {
+    color: $Marine-blue;
+    font-weight: 700;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  .btn {
+    @include btn-secondary;
+  }
+}

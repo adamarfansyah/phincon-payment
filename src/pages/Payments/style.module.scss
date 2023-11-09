@@ -1,0 +1,59 @@
+@import '@styles/base';
+
+.paymentsPage {
+  display: flex;
+  background-color: white;
+  gap: 50px;
+  margin: 100px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  @include apply-at-md-size {
+    margin: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include apply-at-lg-size {
+    margin: 20px 200px;
+  }
+  .left {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    @include apply-at-md-size {
+      position: static;
+      justify-content: space-between;
+      width: fit-content;
+      z-index: 0;
+    }
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+// .paymentsPage {
+//   display: flex;
+//   background-color: white;
+//   gap: 50px;
+//   margin: 20px;
+//   padding: 20px;
+//   border-radius: 10px;
+//   flex-direction: column;
+//   @include apply-at-md-size {
+//     margin: 50px;
+//     justify-content: space-between;
+//   }
+//   @include apply-at-lg-size {
+//     flex-direction: row;
+//     margin: 20px 200px;
+//   }
+//   .left {
+//     position: absolute;
+//   }
+//   .right {
+//     width: 100%;
+//   }
+// }

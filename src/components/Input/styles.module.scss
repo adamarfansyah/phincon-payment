@@ -1,0 +1,21 @@
+@import '@styles/base';
+
+.inputCustom {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  label {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    &:focus {
+      outline: none;
+      border: 1px solid blue;
+    }
+  }
+}

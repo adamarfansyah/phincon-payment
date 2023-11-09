@@ -1,0 +1,41 @@
+@import '@styles/base';
+
+.cardPlans {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+
+  @include apply-at-md-size {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include apply-at-xxl-size {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  background-color: $Magnolia;
+  border-radius: 10px;
+  .duration {
+    font-weight: 700;
+    color: $Cool-gray;
+    padding: 20px 0;
+    &.active {
+      color: $Marine-blue;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  .btn {
+    @include btn-primary;
+  }
+}

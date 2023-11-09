@@ -1,0 +1,57 @@
+@import '@styles/base';
+
+.checkbox {
+  border: 2px solid $Cool-gray;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  @include apply-at-lg-size {
+    width: 100%;
+  }
+  &.active {
+    border: 2px solid $Marine-blue;
+    background-color: $Magnolia;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .input {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+    .input:checked {
+      background-color: #0074d9;
+      border: 1px solid #0074d9;
+    }
+    .input:checked::before {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: white;
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    color: $Marine-blue;
+  }
+  .desc {
+    font-weight: 700;
+    font-size: 16px;
+    color: $Cool-gray;
+  }
+  .duration {
+    font-weight: 700;
+    font-size: 16px;
+    color: $Cool-gray;
+  }
+}

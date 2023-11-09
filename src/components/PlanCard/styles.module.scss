@@ -1,0 +1,48 @@
+@import '@styles/base';
+
+.planCard {
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  width: 80%;
+  height: auto;
+  border: 1px solid $Cool-gray;
+  cursor: pointer;
+  @include apply-at-lg-size {
+    width: 100%;
+  }
+  &.active {
+    background-color: $Magnolia;
+    border: 1px solid $Marine-blue;
+  }
+  @include apply-at-md-size {
+    width: 70%;
+  }
+  @include apply-at-lg-size {
+    flex-direction: column;
+    width: 70%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .title {
+      font-weight: 700;
+      color: $Marine-blue;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: 700;
+      color: $Cool-gray;
+      font-size: 14px;
+    }
+    .time {
+      font-weight: 400;
+      color: $Marine-blue;
+      font-size: 12px;
+    }
+  }
+}

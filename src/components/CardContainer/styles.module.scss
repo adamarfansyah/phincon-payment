@@ -1,0 +1,32 @@
+@import '@styles/base';
+
+.cardContainer {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  width: 1000px;
+  gap: 90px;
+  border-radius: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @include apply-at-lg-size {
+    width: 80%;
+  }
+  .wrapper {
+    margin-bottom: 20px;
+    .title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .desc {
+      font-size: 18px;
+      font-weight: 700;
+      color: $Cool-gray;
+    }
+  }
+}

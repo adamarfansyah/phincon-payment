@@ -1,0 +1,17 @@
+@import '@styles/base';
+
+.checkboxContents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  .btn {
+    @include btn-primary;
+  }
+}

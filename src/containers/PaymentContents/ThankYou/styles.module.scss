@@ -1,0 +1,22 @@
+@import '@styles/base';
+
+.thankYou {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: $Marine-blue;
+  }
+  .desc {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 700;
+    color: $Cool-gray;
+  }
+}

@@ -1,0 +1,19 @@
+@mixin btn-primary {
+  background-color: $Marine-blue;
+  padding: 10px 30px;
+  border: none;
+  color: $White;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@mixin btn-secondary {
+  background-color: $Purplish-blue;
+  padding: 10px 30px;
+  border: none;
+  color: $White;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+}

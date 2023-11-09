@@ -7,4 +7,25 @@ export default {
   app_popup_error_title: 'Something went wrong!',
   app_popup_error_message: 'Sorry, an error has occurred. Please try again later',
   app_popup_close_button_label: 'Close',
+
+  payment_info_title: 'Personal Info',
+  payment_info_desc: 'Please provide your name, email address, and phone number',
+  payment_paket_title: 'Select your plan',
+  payment_paket_desc: 'You have the option of monthly or yearly billing',
+  payment_addons_title: 'Pick add-ons',
+  payment_addons_desc: 'Add-ons help enhance your gaming experience',
+  payment_summary_title: 'Finiship up',
+  payment_summary_desc: 'Double-check everything looks OK before confirming',
+
+  sidebar_info_title: 'YOUR INFO',
+  sidebar_info_step: 'STEP 1',
+  sidebar_paket_title: 'SELECT PLAN',
+  sidebar_paket_step: 'STEP 2',
+  sidebar_addons_title: 'ADD-ONS',
+  sidebar_addons_step: 'STEP 3',
+  sidebar_summary_title: 'SUMMARY',
+  sidebar_summary_step: 'STEP 4',
+
+  thanks_title: 'Thank You !',
+  thanks_desc: `Thanks for confirming your subscription! We hope you have fun using our platform. if you ever need support, please feel free to email us at support@loremgaming.com`,
 };

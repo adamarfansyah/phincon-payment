@@ -1,0 +1,85 @@
+@import '@styles/base';
+
+.stepCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: white;
+  margin-bottom: 20px;
+  .stepCard__wrapper {
+    display: none;
+    text-align: left;
+    @include apply-at-md-size {
+      display: block;
+      width: 50%;
+    }
+    @include apply-at-lg-size {
+      width: 60%;
+    }
+    .desc {
+      font-weight: 700;
+      font-size: 10px;
+      color: $Cool-gray;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+    }
+  }
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    &.active {
+      background-color: $Pastel-blue;
+      color: $Marine-blue;
+    }
+  }
+}
+
+// .stepCard {
+//   display: flex;
+//   align-items: center;
+//   gap: 30px;
+//   color: white;
+//   margin-bottom: 20px;
+//   .stepCard__wrapper {
+//     .desc {
+//       font-weight: 700;
+//       font-size: 10px;
+//       color: $Cool-gray;
+//       letter-spacing: 1px;
+//     }
+//     .title {
+//       font-weight: 700;
+//       font-size: 10px;
+//       letter-spacing: 0.5px;
+//     }
+//   }
+//   .number {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: transparent;
+//     border: 1px solid;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 100%;
+//     font-size: 12px;
+//     font-weight: 700;
+//     &.active {
+//       background-color: $Pastel-blue;
+//       color: $Marine-blue;
+//     }
+//   }
+// }

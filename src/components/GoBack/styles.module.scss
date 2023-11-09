@@ -1,0 +1,11 @@
+@import '@styles/base';
+
+.goback {
+  color: $Cool-gray;
+  font-weight: 700;
+  width: fit-content;
+  cursor: pointer;
+  &:hover {
+    color: $Marine-blue;
+  }
+}
