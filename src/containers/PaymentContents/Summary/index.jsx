@@ -24,7 +24,7 @@ const SummaryInfo = ({ stepHandler, title, desc, summary, summaryState, handleSu
 
   const isDurationYear = `Total (per ${duration === 'monthly' ? 'month' : 'year'})`;
 
-  if (summaryState) {
+  if (summaryState.setPlanState) {
     return <ThankYou />;
   }
 
